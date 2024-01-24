@@ -25,7 +25,7 @@ def is_valid(ti):
     return 'not_valid'
 
 
-with DAG('tutorial_dag',
+with DAG('first_dag',
          start_date = datetime(2024, 1, 23),
          schedule_interval = '30 * * * *',
          catchup = False) as dag:
